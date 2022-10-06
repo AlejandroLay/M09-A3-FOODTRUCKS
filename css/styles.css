@@ -23,8 +23,8 @@ a {
 	color: rgb(13, 26, 38);
 	position: fixed;
 	top: 0;
-	height: 60px;
-	line-height: 60px;
+	height: 100px;
+	line-height: 100px;
 	width: 100vw;
 	z-index: 10;
 }
@@ -51,15 +51,17 @@ a {
 	float: left;
 	margin-left: 28px;
 	font-size: 1.5em;
-	height: 60px;
+	height: 80px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding: 0.6% 0 0 0;
 }
 
 @media(max-width: 768px) {
 	.logo {
-		/* margin-left: 5px;
-         */
+		margin-left: 5px;
+		padding: 0 0 0 5%;
+
 	}
 }
 
@@ -106,14 +108,6 @@ a {
 	-webkit-transition: all 0.5s ease;
 }
 
-#navbar li a:hover {
-	/* border-bottom: 1px solid rgb(28, 121, 184);
-     */
-	color: rgb(28, 121, 184);
-	transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-}
-
 /* Animated Bottom Line */
 #navbar li a:before,
 #navbar li a:after {
@@ -130,18 +124,6 @@ a {
 	transition: 0.5s;
 }
 
-#navbar li a:after {
-	background: rgb(13, 26, 38);
-	right: 0;
-	/* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-     */
-}
-
-#navbar li a:hover:before {
-	background: rgb(13, 26, 38);
-	width: 100%;
-	transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
-}
 
 #navbar li a:hover:after {
 	background: transparent;
@@ -157,10 +139,14 @@ a {
 		display: block;
 		position: fixed;
 		right: 15px;
-		top: 20px;
+		top: 35px;
 		height: 23px;
 		width: 27px;
 		z-index: 12;
+	}
+
+	.logo {
+		padding: 2% 2% 2% 4%;
 	}
 
 	/* Icon Bars */
@@ -384,13 +370,6 @@ a {
      */
 }
 
-.overlay-menu li a:hover,
-.overlay-menu li a:active {
-	color: rgb(28, 121, 184);
-	-webkit-transition: color 0.3s ease;
-	transition: color 0.3s ease;
-}
-
 
 /* SLIDER AUTOMATICO */
 
@@ -465,4 +444,29 @@ a {
 
 img {
 	vertical-align: middle;
+}
+
+/* PAGINA GENERAL */
+
+.sellers {
+	text-align: center;
+	font-size: 12px;
+	color: #222222;
+}
+
+
+.four-column {
+	float: left;
+	width: 25%;
+	padding: 2%;
+}
+
+.four-column img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	.four-column {
+		width: 50%;
+	}
 }
