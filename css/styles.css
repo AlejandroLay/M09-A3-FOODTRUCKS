@@ -412,6 +412,13 @@ img {
 	color: #222222;
 }
 
+.comida {
+	text-align: center;
+	font-size: 12px;
+	color: #222222;
+	padding: 5% 0 0 0;
+}
+
 
 .four-column {
 	float: left;
