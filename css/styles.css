@@ -446,9 +446,11 @@ img {
 	.four-column {
 		width: 50%;
 	}
+}
 
-	.primerMNSG {
-		padding: 10% 0 0 0;
+@media only screen and (max-width: 400px) {
+	.four-column {
+		width: 100%;
 	}
 }
 
